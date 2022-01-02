@@ -40,8 +40,9 @@
       let dobasTotal = 0;
       let arr1 = []
       function dobas(min, max) {
-        let dobottÉrték = Math.floor(Math.random() * (max - min)) + min;
+        let dobottÉrték = Math.floor(Math.random() * (max - min)) + min;        
         dobasTotal++;
+        document.getElementById("p2").innerHTML = `Dobások száma: ${dobasTotal}`;
         arr1.push(dobottÉrték);
         console.log(`A dobott érték: ${dobottÉrték}`);
         console.log(`Dobások száma: ${dobasTotal}`);  
